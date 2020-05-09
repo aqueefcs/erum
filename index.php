@@ -16,7 +16,7 @@
 	<!-- Material Design Bootstrap -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
 
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
@@ -375,7 +375,7 @@
           <hr class="my-5">
           <div class="row">
             <div class="col-md-5">
-              <img src="assets/img/ahmed1.png" class="img-fluid rounded-circle" alt="smaple image">
+              <img src="ahmed1.png" class="img-fluid rounded-circle" alt="smaple image">
             </div>
             <div class="col-md-7 d-flex align-items-center">
               <div>
