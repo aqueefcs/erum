@@ -35,3 +35,10 @@ header,
 
 }
 
+
+@media (max-width: 768px){
+  .log-btn{
+    font-size: 12px;
+  }
+}
+
