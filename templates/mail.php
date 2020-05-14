@@ -11,7 +11,7 @@ if(isset( $_POST['phone']))
 $phone = $_POST['phone'];
 
 $content="From: $name \n Email: $email \n Phone: $phone \n Message: $message";
-$recipient = "yogeshyogendra786.yy@gmail.com";
+$recipient = "mdibrahim1963@gmail.com";
 $mailheader = "From: $email \r\n";
 mail($recipient, $subject, $content, $mailheader) or die("Error!");
 echo "Email sent!";
