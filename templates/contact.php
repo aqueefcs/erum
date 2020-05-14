@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <!-- Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-  <link href="https://fonts.googleapis.com/css2?family=Modak&family=Galada&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Modak&family=Galada&display=swap" rel="stylesheet">
   <!-- Bootstrap core CSS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
@@ -18,18 +18,15 @@
   <link rel="stylesheet" href="contactstyle.css">
 </head>
 <body>
-  
 
-  
+
 <!--Modal: Login / Register Form-->
 <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog cascading-modal" role="document">
         <!--Content-->
         <div class="modal-content">
-
             <!--Modal cascading tabs-->
             <div class="modal-c-tabs">
-
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs md-tabs tabs-2 elegant-color-dark" role="tablist">
                     <li class="nav-item">
@@ -39,12 +36,10 @@
                         <a class="nav-link text-warning" data-toggle="tab" href="#panel8" role="tab"><i class="fa fa-user-plus mr-1"></i> Register</a>
                     </li>
                 </ul>
-
                 <!-- Tab panels -->
                 <div class="tab-content">
                     <!--Panel 7-->
                     <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
-
                         <!--Body-->
                         <div class="modal-body mb-1">
                             <div class="md-form form-sm mb-5">
@@ -52,7 +47,6 @@
                                 <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
                                 <label data-error="wrong" data-success="right" for="modalLRInput10">Your email</label>
                             </div>
-
                             <div class="md-form form-sm mb-4">
                                 <i class="fa fa-lock prefix"></i>
                                 <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
@@ -70,13 +64,10 @@
                             </div>
                             <button type="button" class="btn btn-outline-warning waves-effect ml-auto" data-dismiss="modal">Close</button>
                         </div>
-
                     </div>
                     <!--/.Panel 7-->
-
                     <!--Panel 8-->
                     <div class="tab-pane fade" id="panel8" role="tabpanel">
-
                         <!--Body-->
                         <div class="modal-body">
                             <div class="md-form form-sm mb-5">
@@ -84,23 +75,19 @@
                                 <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
                                 <label data-error="wrong" data-success="right" for="modalLRInput12">Your email</label>
                             </div>
-
                             <div class="md-form form-sm mb-5">
                                 <i class="fa fa-lock prefix"></i>
                                 <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
                                 <label data-error="wrong" data-success="right" for="modalLRInput13">Your password</label>
                             </div>
-
                             <div class="md-form form-sm mb-4">
                                 <i class="fa fa-lock prefix"></i>
                                 <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
                                 <label data-error="wrong" data-success="right" for="modalLRInput14">Repeat password</label>
                             </div>
-
                             <div class="text-center form-sm mt-2">
                                 <button class="btn btn-md btn-warning">Sign up <i class="fa fa-sign-in ml-1"></i></button>
                             </div>
-
                         </div>
                         <!--Footer-->
                         <div class="modal-footer">
@@ -112,17 +99,13 @@
                     </div>
                     <!--/.Panel 8-->
                 </div>
-
             </div>
         </div>
         <!--/.Content-->
     </div>
 </div>
 <!--Modal: Login / Register Form-->
-
-
 <!--info nav-->
-
 <nav class="navbar navbar-dark warning-color text-center">
     <div class="d-flex flex-row text-white text-center log-btn ">
       <div class="p-2"><i class="fab fa-facebook fa-2x text-dark"></i></div>
@@ -135,23 +118,19 @@
       <div class="p-1"><a class="btn btn-sm  btn-success waves-effect" data-toggle="modal" data-target="#modalLRForm" href="">Staff Login</a></div>
     </div>
 </nav>
-
 <!-- info nav ends-->
 <!--Navbar-->
 <nav class="navbar navbar-expand-lg navbar-dark elegant-color-dark">
   <div class="container">
       <!-- Navbar brand -->
       <a class="navbar-brand animated fadeInLeft" href="../index.php">Erum</a>
-
       <!-- Collapse button -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
         aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <!-- Collapsible content -->
       <div class="collapse navbar-collapse" id="basicExampleNav">
-
         <!-- Links -->
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
@@ -164,7 +143,6 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Contact</a>
           </li>
-
           <!-- Dropdown -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
@@ -180,19 +158,15 @@
               <a class="dropdown-item" href="#">Web Development Services</a>
             </div>
           </li>
-
         </ul>
         <!-- Links -->
       <!-- Collapsible content -->
   </div>
 </nav>
 <!--/.Navbar-->
-
-
   <div class="container my-5">
           <!--Section: Content-->
           <section class="dark-grey-text">
-
             <div class="row pr-lg-5">
               <div class="col-md-7 mb-4">
                 <h2 class="text-dark text-center mt-4">Erum Professional Services</h2>
@@ -201,24 +175,17 @@
                 <div class="view">
                   <img src="https://mdbootstrap.com/img/illustrations/drawkit-phone-conversation-colour.svg" class="img-fluid" alt="contact-img">
                 </div>
-
               </div>
               <div class="col-md-5 d-flex align-items-center">
                 <div class="mt-4">
-                  
-                  <form class="border border-light p-5">
 
+                  <form class="border border-light p-5" id="myform" name="contact-form" action="mail.php" method="POST">
                           <p class="h3 mb-4 text-center text-dark"><i class="fas fa-mobile-alt"></i> Contact us</p>
-
-
-                          <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
-
-                          <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
-
-                          <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="Phone Number">
-
+                          <input type="text" name="name" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
+                          <input type="email" name="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+                          <input type="number" name="phone" id="defaultContactFormEmail" class="form-control mb-4" placeholder="Phone Number">
                           <label for="defaultSelect">Subject</label>
-                          <select id="defaultSelect" class="browser-default custom-select mb-4">
+                          <select id="defaultSelect" name="subject" class="browser-default custom-select mb-4">
                               <option value="" disabled="">Choose option</option>
                               <option value="1" selected="">Income Tax- Personal</option>
                               <option value="2">Income Tax - Company</option>
@@ -229,30 +196,21 @@
                               <option value="4">GST</option>
                               <option value="4">Web Development Services</option>
                           </select>
-
-                          <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
-
+                          <textarea name="message" class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
                           <div class="custom-control custom-checkbox mb-4">
                               <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
                               <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label>
                           </div>
-
-                          <button class="btn btn-orange  btn-block" type="submit">Send</button>
+                          <button class="btn btn-orange  btn-block" type="submit" onclick="document.getElementById('myform').submit();">Send</button>
                       </form>
-
                 </div>
               </div>
             </div>
-
           </section>
           <!--Section: Content-->
-
 </div>
 <hr class="my-5">
-
-
 <section class="container">
-
       <h2 class="text-dark text-center font-weight-bold mb-4">Locate Us</h2>
       <div class="row">
         <div class="col-md-7 text-center map">
@@ -262,73 +220,36 @@
             <div class="alert alert-secondary">
               <h3 class="font-weight-bold">Office Address</h3>
               <p><strong>Address:</strong> NGH 39, ABC Road, Kolkata, PIN:700001.</p>
-
               <h3 class="font-weight-bold">Head Office</h3>
               <p><strong>Address:</strong> 25,M.G Road Kolkata PIN:700054 </p>
             </div>
-
         </div>
       </div>
-      
-</section>
 
+</section>
 <hr class="my-2">
  <!-- Footer -->
 <footer class="page-footer font-small elegant-color-dark">
-
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3">© 2020 Copyright:
     <a href="../index.php"> Erum Profession Services</a>
   </div>
   <!-- Copyright -->
-
 </footer>
 <!-- Footer -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <!--div class="container">
     <div class="row mt-4">
       <div class="col-md-5">
             <h2 class="text-dark">Erum Prefessional Services</h2>
-              
+
       </div>
       <div class="col-md-7">
           <div class="card">
               <form class="border border-light p-5">
-
                   <p class="h4 mb-4 text-center">Contact us</p>
-
-
                   <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
-
                   <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
-
                   <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="Phone Number">
-
                   <label for="defaultSelect">Subject</label>
                   <select id="defaultSelect" class="browser-default custom-select mb-4">
                       <option value="" disabled="">Choose option</option>
@@ -341,39 +262,19 @@
                       <option value="4">GST</option>
                       <option value="4">Web Development Services</option>
                   </select>
-
                   <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
-
                   <div class="custom-control custom-checkbox mb-4">
                       <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
                       <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label>
                   </div>
-
                   <button class="btn btn-info btn-block" type="submit">Send</button>
               </form>
-              
-            </div>
 
+            </div>
       </div>
-      
+
     </div>
   </div-->
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   <!-- JQuery -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -383,8 +284,7 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/js/mdb.min.js"></script>
-    
 
- 
+
 </body>
 </html>
