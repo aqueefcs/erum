@@ -16,20 +16,124 @@
 	<!-- Material Design Bootstrap -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
 
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+
 <body>
 
-	<nav class="navbar navbar-dark warning-color">
-    <div class="d-flex flex-row text-white log-btn">
+  
+<!--Modal: Login / Register Form-->
+<div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog cascading-modal" role="document">
+        <!--Content-->
+        <div class="modal-content">
+
+            <!--Modal cascading tabs-->
+            <div class="modal-c-tabs">
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs md-tabs tabs-2 elegant-color-dark" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active text-warning" data-toggle="tab" href="#panel7" role="tab"><i class="fa fa-user mr-1"></i> Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning" data-toggle="tab" href="#panel8" role="tab"><i class="fa fa-user-plus mr-1"></i> Register</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panels -->
+                <div class="tab-content">
+                    <!--Panel 7-->
+                    <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+
+                        <!--Body-->
+                        <div class="modal-body mb-1">
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-envelope prefix"></i>
+                                <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput10">Your email</label>
+                            </div>
+
+                            <div class="md-form form-sm mb-4">
+                                <i class="fa fa-lock prefix"></i>
+                                <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput11">Your password</label>
+                            </div>
+                            <div class="text-center mt-2">
+                                <button class="btn btn-md btn-warning">Log in <i class="fa fa-sign-in ml-1"></i></button>
+                            </div>
+                        </div>
+                        <!--Footer-->
+                        <div class="modal-footer">
+                            <div class="options text-center text-md-right mt-1">
+                                <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
+                                <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                            </div>
+                            <button type="button" class="btn btn-outline-warning waves-effect ml-auto" data-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
+                    <!--/.Panel 7-->
+
+                    <!--Panel 8-->
+                    <div class="tab-pane fade" id="panel8" role="tabpanel">
+
+                        <!--Body-->
+                        <div class="modal-body">
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-envelope prefix"></i>
+                                <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput12">Your email</label>
+                            </div>
+
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-lock prefix"></i>
+                                <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput13">Your password</label>
+                            </div>
+
+                            <div class="md-form form-sm mb-4">
+                                <i class="fa fa-lock prefix"></i>
+                                <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput14">Repeat password</label>
+                            </div>
+
+                            <div class="text-center form-sm mt-2">
+                                <button class="btn btn-md btn-warning">Sign up <i class="fa fa-sign-in ml-1"></i></button>
+                            </div>
+
+                        </div>
+                        <!--Footer-->
+                        <div class="modal-footer">
+                            <div class="options text-right">
+                                <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a></p>
+                            </div>
+                            <button type="button" class="btn btn-outline-warning waves-effect ml-auto" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    <!--/.Panel 8-->
+                </div>
+
+            </div>
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
+<!--Modal: Login / Register Form-->
+
+
+
+
+<nav class="navbar navbar-dark warning-color text-center">
+    <div class="d-flex flex-row text-white text-center log-btn ">
       <div class="p-2"><i class="fab fa-facebook fa-2x text-dark"></i></div>
       <div class="p-2"><i class="fas fa-envelope fa-2x text-dark"></i></div>
       <div class="p-2"><i class="fab fa-twitter fa-2x text-dark"></i></div>
-      <div class="p-2"><i class="fas fa-mobile fa-2x text-dark"> 999-555-2224</i></div>
+      <div class="p-2"><i class="fas fa-mobile fa-2x text-dark"> 9875524469</i></div>
     </div>
     <div class="d-flex flex-row-reverse text-white" style="margin-left: 60px;">
-      <div class="p-1"><a class="btn btn-sm  btn-success waves-effect" href="">Admin Login</a></div>
-      <div class="p-1"><a class="btn btn-sm  btn-success waves-effect" href="">Staff Login</a></div>
+      <div class="p-1"><a class="btn btn-sm  btn-success waves-effect" data-toggle="modal" data-target="#modalLRForm" href="">Admin Login</a></div>
+      <div class="p-1"><a class="btn btn-sm  btn-success waves-effect" data-toggle="modal" data-target="#modalLRForm" href="">Staff Login</a></div>
     </div>
   </nav>
 
@@ -37,7 +141,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark elegant-color-dark">
   <div class="container">
       <!-- Navbar brand -->
-      <a class="navbar-brand" href="#">Erum</a>
+      <a class="navbar-brand animated fadeInLeft" href="#">Erum</a>
 
       <!-- Collapse button -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
@@ -58,7 +162,7 @@
             <a class="nav-link" href="#">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="templates/contact.php">Contact</a>
           </li>
 
           <!-- Dropdown -->
@@ -66,9 +170,14 @@
             <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">Srevices</a>
             <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="#">Income Tax - Personal</a>
+              <a class="dropdown-item" href="#">Income Tax - Company</a>
+              <a class="dropdown-item" href="#">TDS Corporate</a>
+              <a class="dropdown-item" href="#">TDS Professional</a>
+              <a class="dropdown-item" href="#">TDS Standard</a>
+              <a class="dropdown-item" href="#">Digital Signature</a>
+              <a class="dropdown-item" href="#">GST</a>
+              <a class="dropdown-item" href="#">Web Development Services</a>
             </div>
           </li>
 
@@ -79,8 +188,7 @@
 </nav>
 <!--/.Navbar-->
 
-
-
+ 
 
  <!--Carousel Wrapper-->
   <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
@@ -90,6 +198,7 @@
       <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
       <li data-target="#carousel-example-1z" data-slide-to="1"></li>
       <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="3"></li>
     </ol>
     <!--/.Indicators-->
 
@@ -105,8 +214,8 @@
 
             <!-- Content -->
             <div class="animated fadeInUp text-center white-text mx-5">
-              <h1 class="mb-4" style="font-size: 5em;">
-                <strong class="erum">Erum Professionals</strong>
+              <h1 class="mb-4" style="font-size: 5em; ">
+                <strong class="erum">Erum Professional Services</strong>
               </h1>
 
               <p style="font-size: 2em;">
@@ -114,7 +223,7 @@
               </p>
 
               <p class="mb-4 d-none d-md-block">
-                <strong>Optimize tax costs using our years experience</strong>
+                <strong class="erum2">Optimize tax costs using our years experience</strong>
               </p>
 
               
@@ -137,8 +246,8 @@
 
             <!-- Content -->
             <div class="animated fadeInUp text-center white-text mx-5">
-              <h1 class="mb-4" style="font-size: 5em;">
-                <strong class="erum">Erum Professionals</strong>
+              <h1 class="mb-4" style="font-size: 5em;" id="name">
+                <strong class="erum">Erum Professional Services</strong>
               </h1>
 
               <p style="font-size: 2em;">
@@ -146,7 +255,7 @@
               </p>
 
               <p class="mb-4 d-none d-md-block">
-                <strong>Optimize tax costs using our years experience</strong>
+                <strong class="erum2">Optimize tax costs using our years experience</strong>
               </p>
 
             </div>
@@ -168,8 +277,8 @@
 
             <!-- Content -->
             <div class="animated fadeInUp text-center white-text mx-5">
-              <h1 class="mb-4" style="font-size: 5em;">
-                <strong class="erum">Erum Professionals</strong>
+              <h1 class="mb-4" style="font-size: 5em;" id="name">
+                <strong class="erum">Erum Professional Services</strong>
               </h1>
 
               <p style="font-size: 2em;">
@@ -177,7 +286,7 @@
               </p>
 
               <p class="mb-4 d-none d-md-block">
-                <strong>Optimize tax costs using our years experience</strong>
+                <strong class="erum2">Optimize tax costs using our years experience</strong>
               </p>
 
             </div>
@@ -189,6 +298,36 @@
         </div>
       </div>
       <!--/Third slide-->
+
+
+      <div class="carousel-item">
+        <div class="view" style="background-image: url('assets/img/sign.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="animated fadeInUp text-center white-text mx-5">
+              <h1 class="mb-4" style="font-size: 5em;" id="name">
+                <strong class="erum">Erum Professional Services</strong>
+              </h1>
+
+              <p style="font-size: 2em;">
+                <strong class="erum1">Digital Signature</strong>
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <strong class="erum2">Optimize tax costs using our years experience</strong>
+              </p>
+
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
 
     </div>
     <!--/.Slides-->
@@ -287,7 +426,7 @@
                 <i class="fas fa-check-circle fa-2x indigo-text"></i>
               </div>
               <div class="col-10">
-                <h6 class="feature-title">Account Outscoring</h6>
+                <h6 class="feature-title">Account Outsourcing</h6>
                 <p class="grey-text">Our experts are ready to manimize the costs associated with the payment of the taxes by using absolutely legal,legitimate and effective method. <a class="text-warning" href=""><i class="fas fa-arrow-right"> Explore More</i></a>
                 </p>
                 <div style="height:5px;"></div>
@@ -299,7 +438,7 @@
 
           <!--Second column-->
           <div class="col-md-4 flex-center">
-            <img src="https://mdbootstrap.com/img/Others/screens.png" alt="MDB Magazine Template displayed on iPhone" class="z-depth-0 img-fluid">
+            <img  src="https://mdbootstrap.com/img/Others/screens.png" alt="" class="z-depth-0 img-fluid">
           </div>
           <!--/Second column-->
 
@@ -325,7 +464,7 @@
                 <i class="fas fa-check-circle fa-2x indigo-text"></i>
               </div>
               <div class="col-10">
-                <h6 class="feature-title">GST</h6>
+                <h6 class="feature-title">Web Develepment services</h6>
                <p class="grey-text">Our experts are ready to manimize the costs associated with the payment of the taxes by using absolutely legal,legitimate and effective method. <a class="text-warning" href=""><i class="fas fa-arrow-right"> Explore More</i></a>
                 </p>
                 <div style="height:5px;"></div>
@@ -353,7 +492,7 @@
                 <i class="fas fa-check-circle fa-2x indigo-text"></i>
               </div>
               <div class="col-10">
-                <h6 class="feature-title">All types of other Government Works</h6>
+                <h6 class="feature-title">Digital Signature and other Government Works</h6>
                 <p class="grey-text">Our experts are ready to manimize the costs associated with the payment of the taxes by using absolutely legal,legitimate and effective method. <a class="text-warning" href=""><i class="fas fa-arrow-right"> Explore More</i></a>
                 </p>
                 <div style="height:5px;"></div>
@@ -375,12 +514,12 @@
           <hr class="my-5">
           <div class="row">
             <div class="col-md-5 text-center">
-              <img src="ahmed1.png" class="img-fluid rounded-circle ahmed-pic" alt="smaple image">
+              <img src="assets/img/ahmed1.png" class="img-fluid rounded-circle ahmed-pic" alt="smaple image">
             </div>
             <div class="col-md-7 d-flex align-items-center">
               <div class="text-center justify-content-center">
                 
-		      <h3 class="font-weight-bold mb-4 mt-4">Ahmed <span class="text-warning">ALi</span></h3>
+                <h3 class="font-weight-bold mb-4 mt-4">Ahmed <span class="text-warning">ALi</span></h3>
 
                 <p>Some personal information and information about erum professionsl.Some personal information and information about erum professionsl.Some personal information and information about erum professionsl.Some personal information and information about erum professionsl.</p>
 
@@ -407,7 +546,7 @@
             <div>
               <h1 class="card-title h1-responsive pt-3 mb-5 font-bold"><strong>Need to <span class="text-warning">Talk</span></strong> With us?</h1>
               
-              <a class="btn btn-warning btn-lg text-dark">Contact Us <i class="fas fa-angle-right"></i> </a>
+              <a class="btn btn-warning btn-lg text-dark" href="templates/contact.php">Contact Us <i class="fas fa-angle-right"></i> </a>
             </div>
           </div>
         </div>
@@ -489,7 +628,7 @@
 
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href=""> Erum Professionals</a>
+    <a href=""> Erum Professional Services</a>
   </div>
   <!-- Copyright -->
 
