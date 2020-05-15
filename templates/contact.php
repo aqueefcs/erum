@@ -179,7 +179,7 @@
               <div class="col-md-5 d-flex align-items-center">
                 <div class="mt-4">
 
-                  <form class="border border-light p-5" id="myform" name="contact-form" action="mail.php" method="POST">
+                 <form class="border border-light p-5" id="myform" name="contact-form" action="https://formspree.io/myynzrya" method="POST">
                           <p class="h3 mb-4 text-center text-dark"><i class="fas fa-mobile-alt"></i> Contact us</p>
                           <input type="text" name="name" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
                           <input type="email" name="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
@@ -187,21 +187,21 @@
                           <label for="defaultSelect">Subject</label>
                           <select id="defaultSelect" name="subject" class="browser-default custom-select mb-4">
                               <option value="" disabled="">Choose option</option>
-                              <option value="1" selected="">Income Tax- Personal</option>
-                              <option value="2">Income Tax - Company</option>
-                              <option value="3">TDS Corporate</option>
-                              <option value="4">TDS Professional</option>
-                              <option value="4">TDS Standard</option>
-                              <option value="4">Digital Signature</option>
-                              <option value="4">GST</option>
-                              <option value="4">Web Development Services</option>
+                              <option value="Income Tax- Personal" selected="">Income Tax- Personal</option>
+                              <option value="Income Tax - Company">Income Tax - Company</option>
+                              <option value="TDS Corporate">TDS Corporate</option>
+                              <option value="TDS Professional">TDS Professional</option>
+                              <option value="TDS Standard">TDS Standard</option>
+                              <option value="Digital Signature">Digital Signature</option>
+                              <option value="GST">GST</option>
+                              <option value="Web Development Services">Web Development Services</option>
                           </select>
                           <textarea name="message" class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
                           <div class="custom-control custom-checkbox mb-4">
                               <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
                               <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label>
                           </div>
-                          <button class="btn btn-orange  btn-block" type="submit" onclick="document.getElementById('myform').submit();">Send</button>
+                          <button class="btn btn-orange  btn-block" type="submit">Send</button>
                       </form>
                 </div>
               </div>
